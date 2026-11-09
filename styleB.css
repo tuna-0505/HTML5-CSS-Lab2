@@ -1,0 +1,48 @@
+/* Style B Specifications */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+  padding: 10px;
+}
+
+/* Container keeping top 5 boxes on the same line without wrapping */
+.container {
+  white-space: nowrap;
+}
+
+/* Base Box Styling for Version B */
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  background-color: #eeeff2;
+  border-left: 10px dotted #d0d0ff;
+  margin-right: 10px;
+  padding: 10px;
+  vertical-align: top;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+/* Hover Effect */
+.box:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: goldenrod;
+}
+
+/* Position the last box in the bottom right corner */
+.box-f {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 0;
+}
